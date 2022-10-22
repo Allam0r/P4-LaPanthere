@@ -1062,5 +1062,9 @@ h4 {
 }
 
 .icon-md {
-  color: #000000!important;
+  color: black!important;
+}
+
+.btn-d {
+  color: white!important;
 }
