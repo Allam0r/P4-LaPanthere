@@ -517,7 +517,7 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
+  opacity: 1;
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -679,7 +679,7 @@ a {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -738,7 +738,7 @@ h4 {
 }
 
 .white {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .portfolio-thumb {
@@ -777,12 +777,12 @@ h4 {
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #fff !important;
 }
 
 .btn-atomic-tangerine {
   background: #f3976c;
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -850,13 +850,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -1041,4 +1041,26 @@ h4 {
   .bloc-mob-center-text {
     text-align: center;
   }
+}
+
+.citation{
+  font-size: 18px;
+  margin: auto;
+}
+.citation>span{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.img-responsive {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-md {
+  color: #000000!important;
 }
