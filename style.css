@@ -9,7 +9,7 @@ body {
 a,
 button {
   transition: all 0.3s ease-in-out;
-  outline: none !important;
+  /* outline: none !important; */
 }
 a:hover {
   text-decoration: none;
@@ -389,7 +389,7 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-  color: #fff;
+  color: #fff !important;
   background: rgba(0, 0, 0, 0.3);
 }
 button {
@@ -663,9 +663,11 @@ h4 {
   background: #f3976c;
   color: #000000 !important;
 }
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
   background: #c27956 !important;
   color: #ffffff !important;
+  outline: 2px solid #000 !important;
 }
 .ltc-white {
   color: #ffffff !important;
@@ -738,10 +740,6 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    /* padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right); */
-  }
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -750,8 +748,6 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    /* padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right); */
   }
 }
 @media (max-width: 767px) {
@@ -906,11 +902,9 @@ h4 {
 .citation {
   font-size: 18px;
   margin: auto;
+  color: black;
 }
-.citation > span {
-  font-weight: 700;
-  font-style: italic;
-}
+
 .img-responsive {
   margin: auto;
 }
@@ -922,6 +916,7 @@ h4 {
 .icon-md {
   color: black !important;
 }
-.btn-d {
-  color: white !important;
+
+address {
+  color: #000;
 }
